@@ -13,15 +13,15 @@
   "names": [
     {
       "name": "a",
-      "bestBefore": "DateTime.ToString()" //안올수도 있음
+      "bestBefore": unixTimestamp(Long) //안올수도 있음
     },
     {
       "name": "a",
-      "bestBefore": "DateTime.ToString()"
+      "bestBefore": unixTimestamp(Long)
     },
     {
       "name": "a",
-      "bestBefore": "DateTime.ToString()"
+      "bestBefore": unixTimestamp(Long)
     }
   ]
 }
@@ -50,3 +50,30 @@
   ]
 }
 ```
+
+## 3) 안드로이드 → 스프링 식품 등록
+
+요청 URL: POST /item/add
+
+요청 JSON:
+
+```jsx
+{
+  "names": [
+    {
+      "name": "a",
+      "bestBefore": unixTimestamp(Long)
+    },
+    {
+      "name": "a",
+      "bestBefore": unixTimestamp(Long)
+    },
+    {
+      "name": "a",
+      "bestBefore": unixTimestamp(Long)
+    }
+  ]
+}
+```
+
+응답: 없음 (200 코드)
